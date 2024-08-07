@@ -2,7 +2,7 @@
 """
 This file holds all constants such as pid values, setpoints, led values, CAN values etc.
 """
-from Wrappers.BallistaBotsMotor import MotorType
+from Wrappers.TurtleMotor import MotorType
 
 DEBUG_MODE: bool = False
 # MAKE SURE TO MAKE THIS FALSE FOR COMPETITION

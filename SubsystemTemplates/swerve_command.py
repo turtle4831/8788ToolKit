@@ -4,7 +4,7 @@ from wpimath.controller import HolonomicDriveController, PIDController, Profiled
 from wpimath.geometry import Rotation2d
 from wpimath.trajectory import TrapezoidProfileRadians, Trajectory
 
-from Wrappers import BallistaBotsCommand
+from Wrappers import TurtleCommand
 from SubsystemTemplates import drivetrain
 from Utils.math import rotate_vector, bounded_angle_diff
 

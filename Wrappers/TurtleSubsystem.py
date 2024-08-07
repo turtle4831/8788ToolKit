@@ -2,7 +2,7 @@ import commands2
 from commands2 import Command
 
 
-class BallistaBotsSubsystem(commands2.Subsystem):
+class TurtleSubsystem(commands2.Subsystem):
     def __init__(self):
         super().__init__()
 

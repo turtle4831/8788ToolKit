@@ -1,7 +1,7 @@
 from typing import Generic, TypeVar
 import commands2
 
-from Wrappers.BallistaBotsSubsystem import BallistaBotsSubsystem as Subsystem
+from Wrappers.TurtleSubsystem import TurtleSubsystem as Subsystem
 
 T = TypeVar("T", bound=Subsystem)
 

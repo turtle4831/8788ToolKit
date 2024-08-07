@@ -1,4 +1,4 @@
-Welcome new or returning 8788 members!
+
 To start you need to first download robotpy by using this command in the cmd terminal pip install robotpy
 after using that command use this next one to download all librarys to your project py -3 -m robotpy sync
 your project should be good to go after that

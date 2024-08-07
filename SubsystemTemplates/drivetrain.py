@@ -16,7 +16,7 @@ from Units.units import meters, meters_per_second, \
     degrees_per_second__to__radians_per_second, degrees
 from wpilib import TimedRobot
 
-from Wrappers.BallistaBotsSubsystem import BallistaBotsSubsystem
+from Wrappers.TurtleSubsystem import TurtleSubsystem
 
 
 class SwerveNode:
@@ -178,7 +178,7 @@ class SwerveGyro:
         self.heading = initial_angle
 
 
-class SwerveDrivetrain(BallistaBotsSubsystem):
+class SwerveDrivetrain(TurtleSubsystem):
     """
     Swerve Drivetrain Extendable class. Contains driving functions.
     """
