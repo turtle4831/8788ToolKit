@@ -21,7 +21,7 @@ class SubsystemType(Enum):
     ELEV_CONTROL = 0
     ARM_CONTROL = 1
     DRIVE_CONTROL = 2
-class BallistaBotsMotor:
+class TurtleMotor:
 
     def __init__(self,motorRev: rev.CANSparkMax = None,motorCtre: phoenix6.hardware.TalonFX = None, motor_type:MotorType = MotorType.UNKOWN, reverse:bool = False):
         match motor_type:
@@ -123,26 +123,6 @@ class BallistaBotsMotor:
         except Exception as e:
             logger.error(f"{e}")
 
-    def setFeedforward(self,subsystem_type:SubsystemType, kS = 0 ,kG = 0,kV = 0,kA = 0):
-        #TODO fix this add it to controlling the rev motor
-        """
-        kS – The static gain, in volts.
-        kG – The gravity gain, in volts.
-        kV – The velocity gain, in volt seconds per radian.
-        kA – The acceleration gain, in volt seconds² per radian
-        :param subsystem_type:
-        :return:
-        """
-        match subsystem_type:
-            case SubsystemType.ARM_CONTROL:
-                self.feedforward = ArmFeedforward(kS,kG,kV,kA)
-            case SubsystemType.ELEV_CONTROL:
-                self.feedforward = ElevatorFeedforward(kS,kG,kV,kA)
-            case SubsystemType.DRIVE_CONTROL:
-                self.feedforward = SimpleMotorFeedforwardMeters(kS,kV,kA)
-
-
-
 
     def controlWithPid(self,measurement:float, setpoint:float = 0, slot:int = 0,control_type:PID_CONTROL_TYPE = None):
         self.power = self.pid_slot[slot].calculate(measurement,setpoint)
@@ -158,6 +138,9 @@ class BallistaBotsMotor:
         else:
             self.motorRev.set(self.power)
 
+
+    def setVoltage(self, voltage):
+        self.motorRev.set(voltage)
 
 
 

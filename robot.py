@@ -35,6 +35,7 @@ class robot(wpilib.TimedRobot):
 
 
     def teleopInit(self):
+        self.auto_selection.getSelected()
         pass
     def teleopPeriodic(self):
         #commands for teleop here
@@ -43,7 +44,7 @@ class robot(wpilib.TimedRobot):
         self.auto_selection.getSelected().run()
         pass
     def autonomousPeriodic(self):
-
         pass
+
 if __name__ == "__main__":
     wpilib.run(robot)
