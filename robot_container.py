@@ -6,10 +6,10 @@ import Commands.IntakeCommand
 import Commands.TransferPoseCommand
 import Commands.ShootCommand
 import Commands.AmpCommand
-from Commands import *
 import Subsystems.Arm
 import Subsystems.Drivetrain
 import Subsystems.Shooter
+import Subsystems.Hang
 
 from Wrappers import TurtleSubsystem
 
@@ -19,15 +19,19 @@ class robot_container:
         self.arm = Subsystems.Arm.Arm()
         self.drivetrain = Subsystems.Drivetrain.Drivetrain()
         self.shooter = Subsystems.Shooter.Shooter()
+        self.hanger = Subsystems.Hang.Hanger()
         #self.subsystems.append("subsystem name")
 
         self.subsystems.append(self.arm)
         self.subsystems.append(self.drivetrain)
         self.subsystems.append(self.shooter)
+        self.subsystems.append(self.hanger)
 
+        self.driver1 = wpilib.PS5Controller(1)
         self.driver2 = wpilib.PS5Controller(2)
 
         self.configureBindings()
+
 
     def initSubsystems(self):
         for subsystem in self.subsystems:
@@ -43,10 +47,18 @@ class robot_container:
         button.Trigger(#on press
             self.driver2.getTriangleButtonPressed()
         ).onTrue(
-            Commands.AmpCommand.GoToAmpPose(self.arm).andThen(
+            Commands.AmpCommand.GoToAmpPose().andThen(
                 commands2.waitcommand.WaitCommand(0.5).andThen(
                     Commands.AmpCommand.AmpScore(self.arm)
                 )
+            )
+        )
+
+        button.Trigger(
+            self.driver1.getCrossButtonPressed()
+        ).onTrue(
+            commands2.InstantCommand(
+                self.hanger.Toggle()
             )
         )
 

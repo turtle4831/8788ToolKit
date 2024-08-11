@@ -16,6 +16,9 @@ LOG_OUT_LEVEL: int = 0
 LOG_FILE_LEVEL: int = 1
 
 isAuto = True
+autox=0
+autoy=0
+autoz=0
 
 RobotWidth = 3
 RobotLength = 3
@@ -29,6 +32,10 @@ pidgeonCan =5
 wristCan = 6
 armCan = 7
 intakeCan = 8
+AirCan = 9
+
+AirForwardChannel = 1
+AirBackwardChannel = 2
 
 lowerLimitSwitchPort = 1
 higherLimitSwitchPoert =2

@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d9dcd90-3ad7-49e4-9515-738c6c8cd62c" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/Auto/Trajectories/deploy/choreo/NewPath.1.traj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto/Trajectories/deploy/choreo/SpeakerToMiddleNote.1.traj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto/Trajectories/deploy/choreo/SpeakerToMiddleNote.traj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto/Trajectories/deploy/choreo/SpeakerToSourceNote.1.traj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto/Trajectories/deploy/choreo/SpeakerToSourceNote.traj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto/Trajectories/empty.chor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/AmpCommand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/IntakeCommand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/ShootCommand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/TransferPoseCommand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/drivetrain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sensors/Vision/ApriltagHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sensors/Vision/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Subsystems/Arm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Subsystems/Drivetrain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Subsystems/Shooter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wrappers/Pigeon2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wrappers/base_gyro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Subsystems/Hang.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TurtleToolkit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TurtleToolkit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wrappers/TurtleMotor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Wrappers/TurtleMotor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subsystems/Drivetrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Subsystems/Drivetrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subsystems/Shooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Subsystems/Shooter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/robot_container.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot_container.py" afterDir="false" />
@@ -50,12 +38,12 @@
     &quot;assignee&quot;: &quot;turtle4831&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/turtle4831/TurtleToolKitFrc.git&quot;,
-    &quot;accountId&quot;: &quot;c49170d5-a8fe-4a80-aac4-e7d3e63f95ae&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/turtle4831/TurtleToolKitFrc.git",
+    "accountId": "9ac12a7a-e997-4fb8-a00f-90df392f0c49"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -67,20 +55,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="8788Toolkit" is-module-sdk="true">
@@ -98,8 +87,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
-        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19072.16" />
+        <option value="bundled-python-sdk-8336bb23522e-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19072.16" />
       </set>
     </attachedChunks>
   </component>
@@ -121,6 +110,7 @@
       <workItem from="1723138559976" duration="14223000" />
       <workItem from="1723318774028" duration="3030000" />
       <workItem from="1723336718477" duration="1795000" />
+      <workItem from="1723402294251" duration="4256000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

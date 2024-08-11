@@ -33,6 +33,10 @@ class robot(wpilib.TimedRobot):
         except Exception as e:
             self.log.error(f"{e}")
 
+        for i in self.robotContainer.subsystems:
+            i.periodic()
+
+
 
     def teleopInit(self):
         self.auto_selection.getSelected()

@@ -2,11 +2,9 @@ import math
 
 import rev
 import wpimath.controller
-from wpimath._controls._controls.controller import PIDController
 
 import config
 from Wrappers import TurtleMotor
-from Wrappers.TurtleMotor import PID_CONTROL_TYPE
 from Wrappers.TurtleSubsystem import TurtleSubsystem
 
 
