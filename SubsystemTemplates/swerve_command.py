@@ -9,7 +9,7 @@ from SubsystemTemplates import drivetrain
 from Utils.math import rotate_vector, bounded_angle_diff
 
 
-class DriveSwerve(BallistaBotsCommand[drivetrain]):
+class DriveSwerve(TurtleCommand[drivetrain]):
     """
     Drive the robot using a swerve drive controller.
     """
@@ -38,7 +38,7 @@ class DriveSwerve(BallistaBotsCommand[drivetrain]):
         return False
 
 
-class FollowPath(BallistaBotsCommand[drivetrain]):
+class FollowPath(TurtleCommand[drivetrain]):
     """
     Follow a given wpimath trajectory using a swerve drive controller.
     """
